@@ -17,7 +17,7 @@ terraform {
 
 provider "aws" {
   region = "us-east-2"
-   profile = "arn:aws:iam::527458448792/ao-jenkins-admin"
+  role_arn = "arn:aws:iam::527458448792/ao-jenkins-admin"
 }
 
 resource "aws_vpc" "main" {
